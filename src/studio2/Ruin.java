@@ -6,14 +6,14 @@ public class Ruin {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		System.out.println("What is your start money? ");
-		int startAmount = in.nextInt();
+		int startAmount = s.nextInt();
 		int startTemp = startAmount;
 		System.out.println("What is the win probability? (0.XX)%");
-		double winChance = in.nextDouble();
+		double winChance = s.nextDouble();
 		System.out.println("What is the win limit you want to set? ");
-		int winLimit = in.nextInt();
+		int winLimit = s.nextInt();
 		double expectedRuin;
 		if(winChance == 0.5) {
 			expectedRuin = 1.0-(startAmount/(double)winLimit);
